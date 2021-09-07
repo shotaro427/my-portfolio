@@ -1,3 +1,6 @@
+require('dotenv').config();
+const { CONTENTFUL_SPACE_ID, CONTENTFUL_ACCESS_TOKEN, ANALYTICS_ID } = process.env
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
@@ -7,8 +10,8 @@ module.exports = {
     {
       resolve: "gatsby-source-contentful",
       options: {
-        accessToken: "nWiH-hNn85dVbesWa2Pbzfp4RnVbMcV4f6o3KHVJFkw",
-        spaceId: "",
+        accessToken: CONTENTFUL_ACCESS_TOKEN,
+        spaceId: CONTENTFUL_SPACE_ID,
       },
     },
     "gatsby-plugin-styled-components",
@@ -16,7 +19,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: "testtest",
+        trackingId: ANALYTICS_ID,
       },
     },
     "gatsby-plugin-sharp",
