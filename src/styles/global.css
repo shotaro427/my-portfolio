@@ -6,3 +6,7 @@ body {
     padding: 0;
     overflow-x: hidden; 
 }
+
+body {
+    --color-custom-black: #191c1f
+}
