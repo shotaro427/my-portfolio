@@ -8,6 +8,10 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-plugin-stylelint",
+      options: { files: ["**/*.{js,jsx}"] }
+    },
+    {
       resolve: "gatsby-source-contentful",
       options: {
         accessToken: CONTENTFUL_ACCESS_TOKEN,
