@@ -1,40 +1,41 @@
-require('dotenv').config();
+require('dotenv').config()
+
 const { CONTENTFUL_SPACE_ID, CONTENTFUL_ACCESS_TOKEN, ANALYTICS_ID } = process.env
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "my-portfolio",
+    siteUrl: 'https://www.yourdomain.tld',
+    title: 'my-portfolio'
   },
   plugins: [
     {
-      resolve: "gatsby-plugin-stylelint",
-      options: { files: ["**/*.{js,jsx}"] }
+      resolve: 'gatsby-plugin-stylelint',
+      options: { files: ['**/*.{js,jsx}'] }
     },
     {
-      resolve: "gatsby-source-contentful",
+      resolve: 'gatsby-source-contentful',
       options: {
         accessToken: CONTENTFUL_ACCESS_TOKEN,
-        spaceId: CONTENTFUL_SPACE_ID,
-      },
+        spaceId: CONTENTFUL_SPACE_ID
+      }
     },
-    "gatsby-plugin-styled-components",
-    "gatsby-plugin-image",
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-image',
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: ANALYTICS_ID,
-      },
+        trackingId: ANALYTICS_ID
+      }
     },
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: 'images',
+        path: './src/images/'
       },
-      __key: "images",
+      __key: 'images'
     },
     {
       resolve: 'gatsby-plugin-eslint',
@@ -44,17 +45,17 @@ module.exports = {
         stages: ['develop'],
         options: {
           emitWarning: true,
-          failOnError: true,
-        },
-     },
+          failOnError: true
+        }
+      }
     },
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
         typekit: {
-          id: process.env.TYPEKIT_ID,
-        },
-      },
-    },
-  ],
-};
+          id: process.env.TYPEKIT_ID
+        }
+      }
+    }
+  ]
+}
