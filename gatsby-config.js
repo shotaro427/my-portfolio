@@ -8,6 +8,8 @@ module.exports = {
     title: 'my-portfolio'
   },
   plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
     {
       resolve: 'gatsby-plugin-stylelint',
       options: { files: ['**/*.{js,jsx}'] }

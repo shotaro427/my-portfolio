@@ -1,18 +1,25 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import TextLink from '../atomic/TextLink'
+import TextLink from '../../atomic/TextLink'
 
 const DinH1 = styled.h1`
-  font-family: din-2014, sans-serif;
+  font-family: var(--font-din);
   font-size: 2.5em;
+  user-select: none;
+
+  &:hover {
+    cursor: pointer;
+  }
 `
-const AppBarWrapper = styled.div`
+const AppBarWrapper = styled.header`
   width: calc(100% - 48px);
-  position: fixed;
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: center;
   padding: 0 24px;
-  box-shadow: rgb(25 28 31 / 4%) 0px 8px 16px, rgb(25 28 31 / 4%) 0px -1px 0px;
+  box-shadow: var(--shadow-appbar);
+  background-color: white;
 `
 
 const ContentWrapper = styled.div`

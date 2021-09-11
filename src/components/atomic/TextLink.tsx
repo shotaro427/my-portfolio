@@ -10,7 +10,7 @@ const Link = styled.a`
   color: var(--color-custom-black);
   opacity: 0.5;
   text-decoration: none;
-  font-family: din-2014, sans-serif;
+  font-family: var(--font-din);
   font-size: 1.5em;
   padding: 0 16px;
   &:hover {
