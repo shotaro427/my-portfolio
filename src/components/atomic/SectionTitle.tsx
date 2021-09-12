@@ -1,8 +1,9 @@
 import * as React from 'react'
 import styled from 'styled-components'
+import constant from '../../constant'
 
 const Title = styled.h1`
-  font-family: var(--font-din);
+  font-family: ${constant.font.family.DIN2014};
   font-size: 3em;
   text-align: ${(props) => props.theme.textAlign};
 `

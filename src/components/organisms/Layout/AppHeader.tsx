@@ -1,9 +1,24 @@
 import * as React from 'react'
 import styled from 'styled-components'
+import constant from '../../../constant'
 import TextLink from '../../atomic/TextLink'
 
+const AppHeader: React.FC = () => {
+  return (
+    <AppBarWrapper>
+      <ContentWrapper>
+        <DinH1>SHOTARO TAUCHI</DinH1>
+        <LinksWrapper>
+          <TextLink text="Blog" href="/#" />
+          <TextLink text="Work" href="/#" />
+        </LinksWrapper>
+      </ContentWrapper>
+    </AppBarWrapper>
+  )
+}
+
 const DinH1 = styled.h1`
-  font-family: var(--font-din);
+  font-family: ${constant.font.family.DIN2014};
   font-size: 2.5em;
   user-select: none;
 
@@ -34,18 +49,5 @@ const LinksWrapper = styled.div`
   display: flex;
   align-items: center;
 `
-const AppHeader: React.FC = () => {
-  return (
-    <AppBarWrapper>
-      <ContentWrapper>
-        <DinH1>SHOTARO TAUCHI</DinH1>
-        <LinksWrapper>
-          <TextLink text="Blog" href="/#" />
-          <TextLink text="Work" href="/#" />
-        </LinksWrapper>
-      </ContentWrapper>
-    </AppBarWrapper>
-  )
-}
 
 export default AppHeader

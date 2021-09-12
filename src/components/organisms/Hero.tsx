@@ -1,6 +1,7 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import * as React from 'react'
 import styled from 'styled-components'
+import constant from '../../constant'
 
 const HeroWrapper = styled.div`
   height: calc(100vh - 100px);
@@ -15,7 +16,7 @@ const HeroContentWrapper = styled.div`
 `
 
 const HeroText = styled.h1`
-  font-family: var(--font-din);
+  font-family: ${constant.font.family.DIN2014};
   font-size: 6em;
   padding-left: 15%;
 `
