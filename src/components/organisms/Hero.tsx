@@ -7,7 +7,7 @@ const HeroWrapper = styled.div`
   height: calc(100vh - 100px);
   display: flex;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: ${constant.color.white_a40};
 `
 const HeroContentWrapper = styled.div`
   width: 100%;

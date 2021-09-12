@@ -8,7 +8,7 @@ type Props = {
 }
 
 const Link = styled.a`
-  color: var(--color-custom-black);
+  color: ${constant.color.black};
   opacity: 0.5;
   text-decoration: none;
   font-family: ${constant.font.family.DIN2014};

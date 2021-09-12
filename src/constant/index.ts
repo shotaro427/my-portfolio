@@ -1,6 +1,8 @@
 export default {
   color: {
-    black: '#191c1f'
+    black: '#191c1f',
+    white: '#fff',
+    white_a40: 'rgba(255, 255, 255, 0.4)'
   },
   font: {
     family: {

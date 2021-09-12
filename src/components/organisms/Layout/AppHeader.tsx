@@ -34,8 +34,8 @@ const AppBarWrapper = styled.header`
   display: flex;
   justify-content: center;
   padding: 0 24px;
-  box-shadow: var(--shadow-appbar);
-  background-color: white;
+  box-shadow: rgb(25 28 31 / 4%) 0px 8px 16px, rgb(25 28 31 / 4%) 0px -1px 0px;
+  background-color: ${constant.color.white};
 `
 
 const ContentWrapper = styled.div`

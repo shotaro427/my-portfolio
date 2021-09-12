@@ -6,15 +6,3 @@ body {
     padding: 0;
     overflow-x: hidden; 
 }
-
-body {
-    /* COLOR */
-    --color-custom-black: #191c1f;
-    --color-appbar-shadow: rgb(25 28 31 / 4%);
-
-    /* FONT */
-    --font-din: din-2014, sans-serif;
-
-    /* SHASOW */
-    --shadow-appbar: var(--color-appbar-shadow) 0px 8px 16px, var(--color-appbar-shadow) 0px -1px 0px
-}
