@@ -19,7 +19,7 @@ const AppHeader: React.FC = () => {
 
 const DinH1 = styled.h1`
   font-family: ${constant.font.family.DIN2014};
-  font-size: 2.5em;
+  font-size: ${constant.font.size.middle};
   user-select: none;
 
   &:hover {

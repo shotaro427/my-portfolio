@@ -12,7 +12,7 @@ const Link = styled.a`
   opacity: 0.5;
   text-decoration: none;
   font-family: ${constant.font.family.DIN2014};
-  font-size: 1.5em;
+  font-size: ${constant.font.size.small};
   padding: 0 16px;
   &:hover {
     opacity: 1;

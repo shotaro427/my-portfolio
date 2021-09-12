@@ -20,7 +20,7 @@ const Footer = styled.footer`
 const FooterText = styled.p`
   font-family: ${constant.font.family.DIN2014};
   color: ${constant.color.black};
-  font-size: 1.2em;
+  font-size: ${constant.font.size.xsmall};
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;

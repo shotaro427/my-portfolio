@@ -4,7 +4,7 @@ import constant from '../../constant'
 
 const Title = styled.h1`
   font-family: ${constant.font.family.DIN2014};
-  font-size: 3em;
+  font-size: ${constant.font.size.large};
   text-align: ${(props) => props.theme.textAlign};
 `
 

@@ -17,7 +17,7 @@ const HeroContentWrapper = styled.div`
 
 const HeroText = styled.h1`
   font-family: ${constant.font.family.DIN2014};
-  font-size: 6em;
+  font-size: ${constant.font.size.xlarge};
   padding-left: 15%;
 `
 
