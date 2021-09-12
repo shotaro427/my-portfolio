@@ -12,6 +12,7 @@ const DinH1 = styled.h1`
   }
 `
 const AppBarWrapper = styled.header`
+  z-index: 100;
   width: calc(100% - 48px);
   position: sticky;
   top: 0;
