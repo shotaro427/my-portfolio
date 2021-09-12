@@ -1,5 +1,6 @@
 import * as React from 'react'
 import styled from 'styled-components'
+import AboutSection from '../organisms/AboutSection'
 import Hero from '../organisms/Hero'
 import AppFooter from '../organisms/Layout/AppFooter'
 import AppHeader from '../organisms/Layout/AppHeader'
@@ -13,6 +14,7 @@ const IndexTemplate: React.FC = () => {
       <AppHeader />
       <Hero />
       <WorkSection />
+      <AboutSection />
       <AppFooter />
     </IndexWrapper>
   )

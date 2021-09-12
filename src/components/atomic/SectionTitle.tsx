@@ -11,11 +11,20 @@ const Title = styled.h1`
 type Props = {
   text: string
   textAlign: 'start' | 'end' | 'left' | 'right' | 'center' | 'justify'
+  styles?: Partial<React.CSSProperties>
 }
 
 const SectionTitle: React.FC<Props> = (props) => {
-  const { text, textAlign = 'center' } = props
-  return <Title theme={{ textAlign }}>{text}</Title>
+  const { text, textAlign = 'center', styles = {} } = props
+  return (
+    <Title style={styles} theme={{ textAlign }}>
+      {text}
+    </Title>
+  )
+}
+
+SectionTitle.defaultProps = {
+  styles: {}
 }
 
 export default SectionTitle
