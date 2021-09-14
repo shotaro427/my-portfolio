@@ -9,6 +9,7 @@ export default {
       DIN2014: 'din-2014, sans-serif'
     },
     size: {
+      xxsmall: '1em',
       xsmall: '1.2em',
       small: '1.5em',
       middle: '2.5em',
