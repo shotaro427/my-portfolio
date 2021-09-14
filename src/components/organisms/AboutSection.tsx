@@ -9,16 +9,18 @@ import SectionTitle from '../atomic/SectionTitle'
 const AboutSection: React.FC = () => {
   return (
     <Section>
+      <SectionTitle styles={{ marginBottom: 0, marginTop: 0 }} text="ABOUT" textAlign="left" />
       <SectionContent>
         <StaticImage style={selfImageStyles} width={350} height={350} src="../../images/selfimage.png" alt="selfimage" />
         <Content>
           <div>
-            <SectionTitle styles={{ marginBottom: 0, marginTop: 0 }} text="ABOUT" textAlign="left" />
             <AboutBoldText>田内 翔太郎</AboutBoldText>
             <AboutText>
               京都在住のフリーランスエンジニア。
               <br />
               Web/モバイル/バックエンド/インフラ設計・構築など多岐にわたって活動中。
+              <br />
+              また、個人的に開発したサービスを運営したり、ブログを書いたりもしています。
             </AboutText>
           </div>
           <GlassButton />
@@ -35,10 +37,10 @@ const AboutSection: React.FC = () => {
 const AboutBoldText = styled.p`
   margin: 0;
   font-family: ${constant.font.family.DIN2014};
-  font-size: ${constant.font.size.xsmall};
+  font-size: 2em;
   font-weight: bold;
   ${media.lessThan('large')`
-    font-size: ${constant.font.size.xxsmall};
+    font-size: ${constant.font.size.xsmall};
   `}
   user-select: none;
 `
@@ -54,6 +56,7 @@ const AboutText = styled.p`
 `
 
 const SectionContent = styled.div`
+  margin-top: 40px;
   display: flex;
   position: relative;
   justify-content: center;
@@ -71,6 +74,7 @@ const SectionContent = styled.div`
 const Section = styled.section`
   position: relative;
   display: flex;
+  flex-direction: column;
   max-width: 60%;
   ${media.lessThan('large')`
     max-width: 80%;
@@ -100,7 +104,7 @@ const ballStyle: React.CSSProperties = {
 const ball1Style: React.CSSProperties = {
   top: '0',
   right: '0',
-  transform: 'translate(40%, -40%)'
+  transform: 'translate(40%, 0)'
 }
 
 const ball2Style: React.CSSProperties = {
