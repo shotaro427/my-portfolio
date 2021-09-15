@@ -82,6 +82,7 @@ const Section = styled.section`
   justify-content: center;
   align-items: center;
   margin: auto;
+  margin-bottom: 300px;
 `
 
 const Content = styled.div`
