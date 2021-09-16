@@ -111,7 +111,7 @@ const ball1Style: React.CSSProperties = {
 const ball2Style: React.CSSProperties = {
   top: '0',
   left: '0',
-  transform: 'translate(-50%, -50%)',
+  transform: 'translate(-50%, 50%)',
   zIndex: 2
 }
 
